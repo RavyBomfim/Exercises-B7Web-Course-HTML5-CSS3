@@ -1,4 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #aeb9b3;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a5c49;
+    height: 60px;
+    margin-top: 0;
+    padding: 10px;
+    color: #c9e0d3;
+}
+
 .container {
-    background-color: rgb(132, 104, 158);
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    color: #294736;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 400px;
+}
+
+.group {
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 415px;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin-top: 30px;
+    display: block;
+}
+
+input {
+    font-size: 16px;
+    background-color: #dce0de;
+    border: 2px solid #294736;
+    border-radius: 3px;
+    outline: 0;
+    padding: 5px;
+}
+
+#name {
+    width: 400px;
+}
+
+#date {
+    padding: 2.5px;
+}
+
+#label_sex {
+    width: 40px;
+}
+
+select {
+    background-color: #dce0de;
+    border: 2px solid #294736;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 170px;
+    padding: 3.5px;
+    outline: 0;
+}
+
+#password {
+    width: 150px;
+}
+
+.terms {
+    width: 450px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #294736;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 415px;
+}
+
+#submit {
+    margin-top: 15px;
+    width: 415px;
+    background-color: #497e60;
+}
+#submit:hover {
+    background-color: #5a9b76;
 }
