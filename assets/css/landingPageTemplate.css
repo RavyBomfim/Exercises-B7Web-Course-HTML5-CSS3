@@ -131,6 +131,7 @@ nav li {
 }
 
 nav a {
+    display: block;
     padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
@@ -246,16 +247,17 @@ button img {
         display:none;
         flex-direction: column;
         position: absolute;
-        left: 81.9%;
+        left: 81.80%;
         width: 18%;
         margin-top: 19px;
         background-color: #0f0f0f;
-        justify-content: center;    
+        justify-content: center;
+        padding-top: 4px;  
+        padding-bottom: 4px;  
     }
 
     nav li {
-        margin-top: 11px;
-        margin-bottom: 8px;
+        margin-top: 1px;
     }
 
     .social_media {
@@ -277,6 +279,16 @@ button img {
 
 }
 
+@media (max-width: 830px) and (min-width: 802px) {
+    header {
+        width: 100%;
+    }
+
+    section {
+        width: 99.8%;
+    }
+}
+
 @media (max-width: 800px) {
 
     header {
@@ -293,6 +305,10 @@ button img {
 
     .social_media img:hover {
         margin-top: 3px;
+    }
+
+    nav ul {
+        left: 82.2%;
     }
 
     section {
@@ -315,7 +331,7 @@ button img {
 
     nav ul {
         left: 0;
-        width: 99%;
+        width: 99.95%;
         margin-top: 20px;
         justify-content: center; 
     }
@@ -339,7 +355,11 @@ button img {
 @media (max-width: 594px) {
 
     header {
-        width: 101%;
+        width: 100.2%;
+    }
+
+    nav ul {
+         width: 100%;
     }
 
     .container1 {
@@ -412,6 +432,38 @@ button img {
         margin-top: 1px;
         margin-left: -20px;
         width: 30px;
+    }
+
+    nav ul {
+        left: 0.5%;
+        right: 0.6%;
+        width: 99.3%;
+    }
+
+    section {
+        width: 99.8%;
+    }
+
+}
+
+@media (max-width: 393px) and (min-width: 381px) {
+    
+    header {
+        width: 101%;
+    }
+
+    .shopping_cart {
+        margin-left: -110px;
+        width: 25px;
+        margin-top: 0px;
+    }
+
+    section {
+        width: 100.4%;
+    }
+
+    nav ul {
+        width: 100%;
     }
 
 }
@@ -541,6 +593,11 @@ button img {
 
     .social_media {
         margin-left: 15px;
+    }
+
+    nav ul {
+        left:auto;
+        width: 98.6%;
     }
 
 }
