@@ -33,6 +33,9 @@ header {
     flex-direction: column;
     background-color: #bf7d65;
     background: linear-gradient(90deg, #8c5d5d,#bf7d65, #D09671);
+    background: -moz-linear-gradient(90deg, #8c5d5d,#bf7d65, #D09671);
+    background: -o-linear-gradient(90deg, #8c5d5d,#bf7d65, #D09671);
+    background: -webkit-linear-gradient(90deg, #8c5d5d,#bf7d65, #D09671);
     margin-top: 2px;
     padding-bottom: 20px;
 }
@@ -46,7 +49,10 @@ header {
 figure {
     border: 1px solid #636363;
     background-color: #8c5d5d;
-    background: linear-gradient(90deg, #8c5d5d,#AD6963, #B57668, #CC926B);
+    background: linear-gradient(90deg, #8c5d5d, #AD6963, #B57668, #CC926B);
+    background: -moz-linear-gradient(90deg, #8c5d5d, #AD6963, #B57668, #CC926B);
+    background: -o-linear-gradient(90deg, #8c5d5d, #AD6963, #B57668, #CC926B);
+    background: -webkit-linear-gradient(90deg, #8c5d5d, #AD6963, #B57668, #CC926B);
     padding: 1px;
 }
 

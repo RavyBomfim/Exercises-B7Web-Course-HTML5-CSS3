@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+    <link rel="stylesheet" href="assets/css/landingPageTemplate.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa" rel="stylesheet">
+
+    <script type="text/javascript">
+         window.onload = function() {
+            document.querySelector(".menuMobile").addEventListener("click", function() {
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none'
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex'
+                }
+            });
+        };
+    </script>
+
+</head>
+<body>
+    <header> 
+        <div class="container1">
+            <div class="container2">
+                <div class="box1">
+                    <div class="logo">
+                        <img src="assets/images/r.png">
+                        <img src="assets/images/j.png">
+                    </div>
+                    <div class="social_media">
+                        <a href=""><img src="assets/images/imglandpage/facebook.png"></a>
+                        <a href=""><img src="assets/images/imglandpage/instagram.png"></a>
+                        <a href=""><img id="whatsapp" src="assets/images/imglandpage/whatsapp.png"></a>
+                        <a href=""><img id="twitter" src="assets/images/imglandpage/twitter.png"></a>
+                        <a href=""><img id="email" src="assets/images/imglandpage/email.png"></a>
+                        <a href=""><img id="telegram" src="assets/images/imglandpage/telegram.png"></a>
+                    </div>
+                </div>
+
+                <div class="box2">
+                    <div class="shopping_cart">
+                        <a href=""><img src="assets/images/shopping-cart.png"></a>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <div class="menuMobile">
+                                <div class="menuMobile_line"></div>
+                                <div class="menuMobile_line"></div>
+                                <div class="menuMobile_line"></div>
+                            </div>
+                            <ul>
+                                <li class="active"><a href="">Home</a></li>
+                                <li><a href="">Products</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Pages</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container3">
+            <div class="title">
+                The Elegance in you!
+            </div>
+            <div class="product">
+                <img src="assets/images/jewel.webp">
+            </div>
+            <div class="description">
+                24k gold pieces set with crystals and diamonds.
+            </div>
+            <div class="price">
+                U$ 273,000.00
+            </div>
+            <button><img src="assets/images/shopping-cart.png">Get it now</button>
+        </div>
+    </section>
+</body>
+</html>

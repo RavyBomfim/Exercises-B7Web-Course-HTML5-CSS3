@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    background-color: #0f0f0f;
+    width: 100%;
+}
+
+.container1 {
+    display: flex;
+    background-color: #0f0f0f;
+    border: 1px dotted #9E8545;
+    margin-left: 1px;
+    width: 100%;
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px dotted #9E8545;
+    margin: 1px;
+    padding: 15px;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 30px;
+    display: flex;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: -12px;
+}
+
+.box1, .box2 {
+    display: flex;
+}
+
+.social_media {
+    color: #554725;
+    margin-left: 50px;
+}
+
+.social_media img {
+    width: 35px;
+}
+
+.social_media #whatsapp {
+    width: 30px;
+    margin-bottom: 3px;
+    margin-left: 8px;
+}
+
+.social_media #twitter {
+    width: 36px;
+    margin-left: 3px;
+    margin-right: 4px;
+    margin-bottom: 1px;
+}
+
+.social_media #email {
+    width: 30px;
+    margin-bottom: 3px;
+}
+
+.social_media #telegram {
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.shopping_cart {
+    margin-right: 50px;
+}
+
+.shopping_cart img {
+    width: 33px;
+    margin-top: 5px;
+}
+
+.social_media img:hover {
+    width: 37px;
+    margin-top: -3px;
+    border: 1px solid #554725;
+}
+
+.social_media #whatsapp:hover {
+    width: 31px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding: 2px;
+    margin-bottom: 1px;
+}
+
+.social_media #twitter:hover {
+    width: 38px;
+    padding: -5px;
+}
+
+.social_media #email:hover {
+    width: 31px;
+    padding: 3px;
+    padding-top: 0px;
+}
+
+.social_media #telegram:hover {
+    width: 36px;
+    padding-top: -3px;
+    padding: 0px;
+    padding-bottom: 1px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+nav ul {
+    display: flex;
+    margin-top: -10px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #554725;
+}
+
+nav .active a, nav a:hover {
+    background-color: #554725;
+    color: #000;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: -12px;
+    margin-right: 15px;
+}
+
+.menuMobile_line {
+    height: 3px;
+    background-color: #554725;
+    border-radius: 5px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    background-color: #A6845B;
+    border: 1px dotted #0c0c0c;
+    width: 99.82%;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted #554725;
+    width: 100%;
+}
+
+.title {
+    margin-top: 20px;
+    color: #554725;
+    font-family: 'Mea Culpa';
+    font-size: 28px;
+}
+
+.product {
+    margin-top: 10px;
+    border: 2px dotted #554725;
+    width: 310px;
+    height: 310px;
+}
+
+.product img {
+    margin-top: -1px;
+    margin-left: -1px;
+    width: 300px;
+    border: 1px double #554725;
+    padding: 5px;
+}
+
+.description {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 300px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #554725;
+}
+
+.price {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #554725;
+    font-size: 20px;
+    border-bottom: 2px solid #554725;
+}
+
+button {
+    background-color: #917350;
+    border: 2px solid #554725;
+    border-radius: 3px;
+    color: #554725;
+    padding: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+button:hover {
+    background-color: #7e6342;
+}
+
+button img {
+    width: 20px;
+    align-self: flex-end;
+    margin-right: 7px;
+    margin-bottom: -3px;
+}
+
+@media (max-width: 1000px) {
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        left: 81.9%;
+        width: 18%;
+        margin-top: 19px;
+        background-color: #0f0f0f;
+        justify-content: center;    
+    }
+
+    nav li {
+        margin-top: 11px;
+        margin-bottom: 8px;
+    }
+
+    .social_media {
+        margin-top: 3px;
+    }
+
+    .shopping_cart {
+        margin-top: 1px;
+        margin-right: 70px;
+    }
+
+    .social_media img:hover {
+        margin-top: -5px;
+    }
+
+    .social_media #telegram:hover {
+        padding-top: -8px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    header {
+        width: 100.7%;
+    }
+
+    .container1 {
+        width: 99.9%;
+    }
+
+    .container2 {
+        width: 99.9%;
+    }
+
+    .social_media img:hover {
+        margin-top: 3px;
+    }
+
+    section {
+        width: 100.4%
+    }
+}
+
+
+@media (max-width: 690px) {
+    
+    header {
+        height: auto;
+    }
+
+    .logo {
+        width: 45px;
+        height: 43px;
+        margin-left: 15px;
+    }
+
+    nav ul {
+        left: 0;
+        width: 99%;
+        margin-top: 20px;
+        justify-content: center; 
+    }
+
+    nav li {
+        padding-left: 20px;
+    }
+
+    .shopping_cart {
+        margin-right: 40px;
+        margin-left: 50px;
+    }
+
+    .menu {
+        margin-right: 10px;
+    }
+
+}
+
+
+@media (max-width: 594px) {
+
+    header {
+        width: 101%;
+    }
+
+    .container1 {
+        width: 99%;
+    }
+
+    .container2 {
+        width: 99.9%;
+    }
+
+    .box1 {
+        display: block;
+    }
+
+    .social_media {
+        margin-top: 25px;
+        margin-left: 15px;
+        width: 250px;
+    }
+
+    .social_media img {
+        width: 30px;
+    }
+
+    .social_media #whatsapp {
+        width: 25px;
+    }
+    
+    .social_media #twitter {
+        width: 29px;
+    }
+
+    .social_media #email {
+        width: 25px;
+    }
+
+    .social_media img:hover {
+        width: 31px;
+    }
+
+    .social_media #whatsapp:hover {
+        width: 26px;
+    }
+
+    .social_media #twitter:hover {
+        width: 30px;
+    }
+
+    .social_media #email:hover {
+        width: 26px;
+    }
+
+    .social_media #telegram:hover {
+        width: 31px;
+    }
+
+    .menu {
+        align-items: flex-start;
+    }
+
+    .menuMobile {
+        margin-top: -9px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    .shopping_cart {
+        margin-top: 1px;
+        margin-left: -20px;
+        width: 30px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .shopping_cart {
+        margin-left: -110px;
+        width: 25px;
+        margin-top: 0px;
+    }
+
+    .menuMobile {
+        width: 30px;
+        height: 30px;
+    }
+
+    .product {
+        width: 230px;
+        height: 230px;
+    }
+
+    .product img {
+        width: 220px;
+    }
+
+    .description {
+        width: 230px;
+        padding-left: 25px;
+    }
+
+    .social_media {
+        width: 220px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 325px) and (min-width: 291px) {
+
+    .logo {
+        margin-left: 15px;
+    }
+
+    .social_media {
+        margin-left: 18px;
+        width: 250px;
+    }
+
+    .social_media img {
+        width: 35px;
+    }
+
+    .social_media #whatsapp {
+        width: 30px;
+    }
+    
+    .social_media #twitter {
+        width: 34px;
+    }
+
+    .social_media #email {
+        width: 30px;
+    }
+
+    .social_media img:hover {
+        width: 36px;
+    }
+
+    .social_media #whatsapp:hover {
+        width: 31px;
+    }
+
+    .social_media #twitter:hover {
+        width: 35px;
+    }
+
+    .social_media #email:hover {
+        width: 31px;
+    }
+
+    .shopping_cart {
+        margin-left: -120px;
+        margin-right: 40px;
+    }
+
+    .menuMobile {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 290px) {
+
+    header {
+        width: 99.9%;
+    }
+
+    .container1 {
+        width: 98.8%;
+    }
+
+    .container2 {
+        width: 87.7%;
+    }
+
+    section {
+        width: 99.2%;
+    }
+
+    .container3 {
+        width: 98.5%;
+    }
+
+    .logo {
+        width: 40px;
+        margin-left: 10px;
+    }
+
+    .shopping_cart {
+        margin-left: -110px;
+        margin-right: 40px;
+    }
+
+    .social_media {
+        margin-left: 15px;
+    }
+
+}
