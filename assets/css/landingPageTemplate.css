@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -16,6 +17,7 @@ header {
     background-color: #0f0f0f;
     border: 1px dotted #9E8545;
     margin-left: 1px;
+    margin-right: 1px;
     width: 100%;
 }
 .container2 {
@@ -73,15 +75,6 @@ header {
     margin-bottom: 3px;
 }
 
-.shopping_cart {
-    margin-right: 50px;
-}
-
-.shopping_cart img {
-    width: 33px;
-    margin-top: 5px;
-}
-
 .social_media img:hover {
     width: 37px;
     margin-top: -3px;
@@ -114,10 +107,19 @@ header {
     padding-bottom: 1px;
 }
 
+.shopping_cart {
+    margin-right: 50px;
+}
+
+.shopping_cart img {
+    width: 33px;
+    margin-top: 5px;
+}
+
 .menu {
     display: flex;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 10px;
     margin-right: 20px;
 }
 
@@ -162,16 +164,22 @@ section {
     align-items: center;
     background-color: #A6845B;
     border: 1px dotted #0c0c0c;
-    width: 99.82%;
+    width: 100%;
 }
 
 .container3 {
     display: flex;
+    justify-content: center;
+    border: 2px dotted #554725;
+    width: 100%;
+}
+
+.box3 {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px dotted #554725;
-    width: 100%;
+    margin-top: 2px;
 }
 
 .title {
@@ -184,8 +192,8 @@ section {
 .product {
     margin-top: 10px;
     border: 2px dotted #554725;
-    width: 310px;
-    height: 310px;
+    width: 302px;
+    height: 302px;
 }
 
 .product img {
@@ -221,7 +229,7 @@ button {
     padding: 5px;
     margin-top: 10px;
     text-transform: uppercase;
-    margin-bottom: 23px;
+    margin-bottom: 33px;
 }
 
 button:hover {
@@ -235,6 +243,43 @@ button img {
     margin-bottom: -3px;
 }
 
+
+@media (min-width: 1400px) {
+
+    header {
+        height: 115px;
+    }
+
+    .container1 {
+        height: 96%;;
+        margin: 1px;
+    }
+
+    .container2 {
+        align-items: center;
+    }
+
+    .box3 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .title {
+        margin-bottom: 5px;
+    }
+
+    .description {
+        margin-top: 10px;
+    }
+
+    .price {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
 @media (max-width: 1000px) {
 
     .menuMobile {
@@ -247,17 +292,17 @@ button img {
         display:none;
         flex-direction: column;
         position: absolute;
-        left: 81.80%;
+        left: 82%;
         width: 18%;
         margin-top: 19px;
         background-color: #0f0f0f;
         justify-content: center;
-        padding-top: 4px;  
-        padding-bottom: 4px;  
+        border-right: 1px dotted #9E8545;
     }
 
     nav li {
         margin-top: 1px;
+        border-right: 2px dotted #554725;
     }
 
     .social_media {
@@ -279,41 +324,13 @@ button img {
 
 }
 
-@media (max-width: 830px) and (min-width: 802px) {
-    header {
-        width: 100%;
-    }
-
-    section {
-        width: 99.8%;
-    }
-}
 
 @media (max-width: 800px) {
-
-    header {
-        width: 100.7%;
-    }
-
-    .container1 {
-        width: 99.9%;
-    }
-
-    .container2 {
-        width: 99.9%;
-    }
 
     .social_media img:hover {
         margin-top: 3px;
     }
 
-    nav ul {
-        left: 82.2%;
-    }
-
-    section {
-        width: 100.4%
-    }
 }
 
 
@@ -329,15 +346,23 @@ button img {
         margin-left: 15px;
     }
 
+    .menu {
+        margin-right: 10px;
+    }
+
     nav ul {
+        width: 100%;
         left: 0;
-        width: 99.95%;
         margin-top: 20px;
-        justify-content: center; 
+        justify-content: center;
+        border-left: 1px dotted #9E8545;
+        border-right: 1px dotted #9E8545;
     }
 
     nav li {
-        padding-left: 20px;
+        padding-left: 0;
+        border-left: 2px dotted #554725;
+        border-right: 2px dotted #554725;
     }
 
     .shopping_cart {
@@ -345,30 +370,10 @@ button img {
         margin-left: 50px;
     }
 
-    .menu {
-        margin-right: 10px;
-    }
-
 }
 
 
 @media (max-width: 594px) {
-
-    header {
-        width: 100.2%;
-    }
-
-    nav ul {
-         width: 100%;
-    }
-
-    .container1 {
-        width: 99%;
-    }
-
-    .container2 {
-        width: 99.9%;
-    }
 
     .box1 {
         display: block;
@@ -434,36 +439,15 @@ button img {
         width: 30px;
     }
 
-    nav ul {
-        left: 0.5%;
-        right: 0.6%;
-        width: 99.3%;
-    }
-
-    section {
-        width: 99.8%;
-    }
-
 }
 
+
 @media (max-width: 393px) and (min-width: 381px) {
-    
-    header {
-        width: 101%;
-    }
 
     .shopping_cart {
         margin-left: -110px;
         width: 25px;
         margin-top: 0px;
-    }
-
-    section {
-        width: 100.4%;
-    }
-
-    nav ul {
-        width: 100%;
     }
 
 }
@@ -485,9 +469,14 @@ button img {
         height: 30px;
     }
 
+    nav ul {
+        left: 0.7%;
+        right: 0.7%;
+    }
+
     .product {
-        width: 230px;
-        height: 230px;
+        width: 222px;
+        height: 222px;
     }
 
     .product img {
@@ -561,26 +550,6 @@ button img {
 
 @media (max-width: 290px) {
 
-    header {
-        width: 99.9%;
-    }
-
-    .container1 {
-        width: 98.8%;
-    }
-
-    .container2 {
-        width: 87.7%;
-    }
-
-    section {
-        width: 99.2%;
-    }
-
-    .container3 {
-        width: 98.5%;
-    }
-
     .logo {
         width: 40px;
         margin-left: 10px;
@@ -593,11 +562,6 @@ button img {
 
     .social_media {
         margin-left: 15px;
-    }
-
-    nav ul {
-        left:auto;
-        width: 98.6%;
     }
 
 }
